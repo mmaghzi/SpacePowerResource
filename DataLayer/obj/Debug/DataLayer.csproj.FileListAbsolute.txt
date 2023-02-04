@@ -1,0 +1,12 @@
+F:\MVC-Projects\SpacePowerResource\DataLayer\bin\Debug\DataLayer.dll.config
+F:\MVC-Projects\SpacePowerResource\DataLayer\bin\Debug\DataLayer.dll
+F:\MVC-Projects\SpacePowerResource\DataLayer\bin\Debug\DataLayer.pdb
+F:\MVC-Projects\SpacePowerResource\DataLayer\bin\Debug\EntityFramework.dll
+F:\MVC-Projects\SpacePowerResource\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+F:\MVC-Projects\SpacePowerResource\DataLayer\bin\Debug\EntityFramework.xml
+F:\MVC-Projects\SpacePowerResource\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+F:\MVC-Projects\SpacePowerResource\DataLayer\obj\Debug\DataLayer.dll
+F:\MVC-Projects\SpacePowerResource\DataLayer\obj\Debug\DataLayer.pdb
+F:\MVC-Projects\SpacePowerResource\DataLayer\obj\Debug\DataLayer.Migrations.InitialSpacePowerDB.resources
+F:\MVC-Projects\SpacePowerResource\DataLayer\obj\Debug\DataLayer.csproj.GenerateResource.Cache
+F:\MVC-Projects\SpacePowerResource\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache

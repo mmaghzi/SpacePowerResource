@@ -1,0 +1,103 @@
+﻿@model IEnumerable<DataLayer.Facilities>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm())
+{
+    <p>
+        @Html.TextBox("query")
+        <input type="submit" name="name" value="جستجو" />
+        
+            @Html.ActionLink("نمایش لیست کامل", "Index")
+       
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FacilityOwner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CityName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StationName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Geography)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FacilityName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FcilityPosition)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OccupiedArea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrentKind)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrentValue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PowerSource)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comments)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FacilityOwner)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CityName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StationName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Geography)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FacilityName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FcilityPosition)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OccupiedArea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrentKind)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrentValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PowerSource)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comments)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FacilityId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FacilityId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FacilityId })
+        </td>
+    </tr>
+}
+
+</table>
