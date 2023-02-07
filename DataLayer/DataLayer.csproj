@@ -55,6 +55,14 @@
     <Compile Include="Migrations\202302031003323_InitialSpacePowerDB.Designer.cs">
       <DependentUpon>202302031003323_InitialSpacePowerDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202302072025179_second.cs" />
+    <Compile Include="Migrations\202302072025179_second.Designer.cs">
+      <DependentUpon>202302072025179_second.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202302072044328_third.cs" />
+    <Compile Include="Migrations\202302072044328_third.Designer.cs">
+      <DependentUpon>202302072044328_third.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Facilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,6 +76,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202302031003323_InitialSpacePowerDB.resx">
       <DependentUpon>202302031003323_InitialSpacePowerDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302072025179_second.resx">
+      <DependentUpon>202302072025179_second.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302072044328_third.resx">
+      <DependentUpon>202302072044328_third.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

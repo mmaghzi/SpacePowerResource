@@ -9,4 +9,6 @@ F:\MVC-Projects\SpacePowerResource\DataLayer\obj\Debug\DataLayer.dll
 F:\MVC-Projects\SpacePowerResource\DataLayer\obj\Debug\DataLayer.pdb
 F:\MVC-Projects\SpacePowerResource\DataLayer\obj\Debug\DataLayer.Migrations.InitialSpacePowerDB.resources
 F:\MVC-Projects\SpacePowerResource\DataLayer\obj\Debug\DataLayer.csproj.GenerateResource.Cache
+F:\MVC-Projects\SpacePowerResource\DataLayer\obj\Debug\DataLayer.Migrations.second.resources
+F:\MVC-Projects\SpacePowerResource\DataLayer\obj\Debug\DataLayer.Migrations.third.resources
 F:\MVC-Projects\SpacePowerResource\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache

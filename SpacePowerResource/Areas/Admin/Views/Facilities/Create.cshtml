@@ -18,10 +18,8 @@
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.FacilityOwner, htmlAttributes: new { @class = "control-label col-md-2" })
-            @*@Html.DropDownList("Techonolgie", (IEnumerable<SelectListItem>)ViewBag.Techonolgie, "--انتخاب--")*@
-
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.FacilityOwner, new { htmlAttributes = new { @class = "form-control" } })
+              <div class="col-md-10">
+                @Html.EditorFor(model => model.FacilityOwner, new { htmlAttributes = new { @class = "form-control", placeholder = "زیرساخت ،همراه اول،ایرانسل،رایتل،..." } })
                 @Html.ValidationMessageFor(model => model.FacilityOwner, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -45,7 +43,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Geography, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Geography, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Geography, new { htmlAttributes = new { @class = "form-control", placeholder = "شهری ، روستایی ، کوهستانی ، خالی از سکنه،..." } })
                 @Html.ValidationMessageFor(model => model.Geography, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -53,7 +51,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.FacilityName, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.FacilityName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.FacilityName, new { htmlAttributes = new { @class = "form-control", placeholder = "BTS،دکل،آنتن ، شارژر ، PDB ،راک سیستم،..." } })
                 @Html.ValidationMessageFor(model => model.FacilityName, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -61,7 +59,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.FcilityPosition, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.FcilityPosition, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.FcilityPosition, new { htmlAttributes = new { @class = "form-control", placeholder = "داخل سالن ، داخل حیاط ،پشت بام،..." } })
                 @Html.ValidationMessageFor(model => model.FcilityPosition, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -69,15 +67,21 @@
         <div class="form-group">
             @Html.LabelFor(model => model.OccupiedArea, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.OccupiedArea, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.OccupiedArea, new { htmlAttributes = new { @class = "form-control", placeholder= "متر مربع" } })
                 @Html.ValidationMessageFor(model => model.OccupiedArea, "", new { @class = "text-danger" })
             </div>
         </div>
-
+        <div class="form-group">
+            @Html.LabelFor(model => model.FuseValue, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FuseValue, new { htmlAttributes = new { @class = "form-control", placeholder = "عدد آمپر درج شده روی فیوز" } })
+                @Html.ValidationMessageFor(model => model.FuseValue, "", new { @class = "text-danger" })
+            </div>
+        </div>
         <div class="form-group">
             @Html.LabelFor(model => model.CurrentKind, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.CurrentKind, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.CurrentKind, new { htmlAttributes = new { @class = "form-control", placeholder = "DC / AC" } })
                 @Html.ValidationMessageFor(model => model.CurrentKind, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -85,7 +89,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.CurrentValue, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.CurrentValue, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.CurrentValue, new { htmlAttributes = new { @class = "form-control", placeholder = "آمپر" } })
                 @Html.ValidationMessageFor(model => model.CurrentValue, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -93,7 +97,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.PowerSource, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.PowerSource, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.PowerSource, new { htmlAttributes = new { @class = "form-control", placeholder = "شارژر مخابرات ، شارژراختصاصی ،کنتور برق اختصاصی ،PDBمخابرات " } })
                 @Html.ValidationMessageFor(model => model.PowerSource, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -101,7 +105,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Comments, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Comments, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Comments, new { htmlAttributes = new { @class = "form-control" , placeholder="فیوز 3 پل ، سیستم خاموش است ، ..."} })
                 @Html.ValidationMessageFor(model => model.Comments, "", new { @class = "text-danger" })
             </div>
         </div>

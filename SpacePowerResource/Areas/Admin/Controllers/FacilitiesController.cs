@@ -67,7 +67,7 @@ namespace SpacePowerResource.Areas.Admin.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "FacilityId,FacilityOwner,CityName,StationName,Geography,FacilityName,FcilityPosition,OccupiedArea,CurrentKind,CurrentValue,PowerSource,Comments")] Facilities facilities)
+        public ActionResult Create([Bind(Include = "FacilityId,FacilityOwner,CityName,StationName,Geography,FacilityName,FcilityPosition,OccupiedArea,FuseValue,CurrentKind,CurrentValue,PowerSource,Comments")] Facilities facilities)
         {
             if (ModelState.IsValid)
             {
